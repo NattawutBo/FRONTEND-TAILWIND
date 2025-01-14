@@ -5,169 +5,455 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
     <link rel="stylesheet" href="output.css">
+
+    
+    <link rel="stylesheet" href="../assets/css/all.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="fixed w-full">
-      <!-- Nav -->
-      <nav class="bg-white border-gray-200 py-2.5">
-          <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-              <!-- Logo -->
-              <a href="#" class="flex items-center">
-                  <img src="../images/Logo.png" class="h-6 mr-3 sm:h-9" alt="Logo">
-                  <span class="self-center text-xl font-semibold whitespace-nowra">My Logo</span>
-              </a>
-              <!-- Menu -->
-              <div class="flex items-end lg:order-2">
-                  <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                      <ul class="flex flex-col mt-4 font-large lg:flex-row lg:space-x-8 lg:mt-0">
-                          <li>
-                              <a href="#" class="text-gray-700 bg-transparent hover:text-green-700">Works</a>
-                          </li>
-                          <li>
-                              <a href="#" class="text-gray-700 bg-transparent hover:text-green-700">Blog</a>
-                          </li>
-                          <li>
-                              <a href="#" class="text-gray-700 bg-transparent hover:text-green-700">Contract</a>
-                          </li>
-                      </ul>   
-                  </div>
-              </div>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white w-full">
+        <div class="flex-wrap flex items-center justify-between px-6">
+            <a href="index.html">
+                <img src="../images/LogoOW.png" alt="Logo" class="w-20">
+            </a>
 
-          </div>
-      </nav>
-  </header>
-  <!-- Profile -->
-  <section class="bg-white">
-      <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto text-center lg:text-left lg:gap-8 xl:gap-0 lg:pb-8 lg:grid-cols-12 lg:pt-60 lg:px-20 ">
-          <div class="mr-auto place-self-center lg:col-span-8">
-              <h1 class="max-w-2xl mb-4 text-3xl font-light md:text-4xl xl:text-5xl">Hi, I am Assawin, <br>Assistant Manager, Information Technology</h1>
-              <p class="max-w-2xl mb-6 font-light text-black-500  lg:mb-8 md:text-lg lg:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-              <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
-                  <button class="text-white bg-green-700 hover:bg-gray-800 font-large rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">Download Resume</button>
-              </div>
-          </div>
-          <div class="text-center justify-items-center pt-10 lg:justify-items-left lg:mt-0 lg:col-span-4 lg:flex lg:text-left lg:px-10">
-              <img src="../images/assawin.png" class="rounded-full w-40 h-40 lg:w-60 lg:h-60">
-          </div>                
-      </div>
-      <div class="grid max-w-screen-xl px-4 pt-10 pb-8 mx-auto text-center lg:text-right lg:gap-8 xl:gap-0 lg:pb-20 lg:grid-cols-12 lg:pt-8 lg:px-20 ">
-          <div class="lg:mt-0 lg:col-span-4 justify-items-center  pb-10 lg:justify-items-left lg:flex lg:items-stretch lg:px-10">
-              <img src="../images/nattawut.png" class="rounded-full w-40 h-40 lg:w-60 lg:h-60">
-          </div>   
-          <div class="mr-auto lg:col-span-8">
-              <h1 class="max-w-2xl mb-4 text-3xl font-light md:text-4xl xl:text-5xl">Hi, I am Nattawut, <br>Supervisor Information Technology</h1>
-              <p class="max-w-2xl mb-6 font-light text-black-500  lg:mb-8 md:text-lg lg:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-              <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 ">
-                  <button class="text-white bg-green-700 hover:bg-gray-800 font-large rounded-lg px-4 lg:px-5 py-2 lg:py-2.5">Download Resume</button>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- Recent Post -->
-  <section class="bg-green-100">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-6 lg:space-y-4 lg:py-10 lg:px-10">
-          <div class="mb-8 flex justify-center lg:justify-between">
-              <span class="text-lg font-medium text-gray-600 text-left lg:text-center">Recent posts</span>
-              <span class="hidden font-medium text-blue-600 lg:text-right lg:inline-flex">View all</span>
-          </div>
-          <div class="space-y-2 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
-              <!-- Card -->
-              <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg lg:p-6">
-                  <h3 class="mb-2 text-lg font-semibold lg:text-2xl">CoMaking a design system from scratchmpany</h3>
-                  <div class="flex items-baseline mt-2">
-                      <span class="mr-2 text-base lg:text-lg">12 Feb 2020</span>
-                      <span class="ml-5 text-base lg:text-lg">|</span>
-                      <span class="ml-5 text-base lg:text-lg">Design, Pattern</span>
-                  </div>
-                  <div class="flex items-baseline mt-1">
-                      <span class="mr-2 text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</span>
-                  </div>
-              </div>
-              <!-- Card -->
-              <div class="flex flex-col p-4 mx-auto text-left text-gray-900 bg-white border border-gray-100 rounded-lg lg:p-6">
-                  <h3 class="mb-2 text-xl font-semibold lg:text-2xl">CoMaking a design system from scratchmpany</h3>
-                  <div class="flex items-baseline mt-2">
-                      <span class="mr-2 text-base lg:text-lg">12 Feb 2020</span>
-                      <span class="ml-5 text-base lg:text-lg">|</span>
-                      <span class="ml-5 text-base lg:text-lg">Figma, Icon Design</span>
-                  </div>
-                  <div class="flex items-baseline mt-1">
-                      <span class="mr-2 text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</span>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </section>
-    <section class="">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-6 lg:space-y-4 lg:py-10 lg:px-10">
-          <div class="mb-8 flex justify-center lg:justify-between">
-              <span class="text-lg font-medium text-gray-600 text-left lg:text-center">Featured works</span>
-          </div>
-          <!-- Featured works -->
-          <div class="items-center gap-8 lg:grid lg:grid-cols-3 xl:gap-16">
-              <img class="w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="../images/dashboard.jpg">
-              <div class="sm:text-lg col-span-2">
-                  <h2 class="mb-4 text-3xl font-large text-black-900">Designing Dashboards</h2>
-                  <div class="mb-4"><a href="#" class="text-white bg-gray-700 hover:bg-green-800 font-large rounded-full text-base px-2 py-2 mr-2 mb-2">2024</a> Dashboard </div>
-                  <p class="mb-8 text-black-900 font-light lg:text-lg">A visual display of the most important information needed to achieve one or more objectives; consolidated and arranged on a single screen so the information can be monitored at a glance.</p>
-              </div>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
-          <div class="items-center gap-8 lg:grid lg:grid-cols-3 xl:gap-16">
-              <img class="w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="../images/Illustration.jpg">
-              <div class="sm:text-lg col-span-2">
-                  <h2 class="mb-4 text-3xl font-large text-black-900">Vibrant Portraits of 2023</h2>
-                  <div class="mb-4"><a href="#" class="text-white bg-gray-700 hover:bg-green-800 font-large rounded-full text-base px-2 py-2 mr-2 mb-2">2023</a> Illustration </div>
-                  <p class="mb-8 text-black-900 font-light lg:text-lg">Explore thousands of high-quality illustration images on Dribbble. Your resource to get inspired, discover and connect with designers worldwide.</p>
-              </div>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
-          <div class="items-center gap-8 lg:grid lg:grid-cols-3 xl:gap-16">
-              <img class="w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="../images/typography.jpg">
-              <div class="sm:text-lg col-span-2">
-                  <h2 class="mb-4 text-3xl font-large text-black-900">36 Days of Malayalam type</h2>
-                  <div class="mb-4"><a href="#" class="text-white bg-gray-700 hover:bg-green-800 font-large rounded-full text-base px-2 py-2 mr-2 mb-2">2023</a> Typography </div>
-                  <p class="mb-8 text-black-900 font-light lg:text-lg">Typography design is the art of choosing and arranging the fonts on a design to make an impact. Here is everything you need to know about it.</p>
-              </div>
-          </div>
-          <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
-      </div>
-    </section>
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" name="search" id="search"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
+                    placeholder="search">
+                <button
+                    class="bg-primary border border-primary text-white py-3 px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="mycarts.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <div
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
+                        2</div>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ./header -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="w-full flex pr-12">
+            <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="product.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+                </div>
+                <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ./navbar -->
+
+    <!-- banner -->
+    <div class="relative">
+        <div class="absolute inset-0 bg-black bg-opacity-70 flex cursor-pointer items-center 
+        justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+        </div>
+        <div class="bg-cover bg-no-repeat bg-center bg-indigo-600 bg-opacity-25 px-16 pb-28 pt-12" style="background-image: url('../images/bandner.png');">
+            <div class="w-full justify-items-end">
+                <h1 class="text-6xl text-left text-primary drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-medium mb-8 capitalize">
+                    rare items comeback <br> don't miss out !!
+                </h1>
+                <p  class="text-end text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam <br>
+                    accusantium perspiciatis, sapiente
+                    magni eos dolorum ex quos dolores odio</p>
+                <div class="mt-12">
+                    <a href="#" class="bg-primary border border-primary text-white px-8 py-3 font-medium 
+                        rounded-md hover:bg-transparent hover:text-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ./banner -->
+
+    <!-- categories -->
+    <div class="w-full justify-items-center py-16">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">shop by category</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="relative rounded-lg overflow-hidden group justify-items-center">
+                <img src="../images/crybaby-icon.jpg" alt="category 1" class="h-50 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">CRYBABY</a>
+            </div>
+            <div class="relative rounded-lg overflow-hidden group justify-items-center">
+                <img src="../images/molly-icon.jpg" alt="category 1" class="h-40 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">MOLLY</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group justify-items-center">
+                <img src="../images/labubu-icon.jpg" alt="category 1" class="h-50 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">LABUBU</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group justify-items-center">
+                <img src="../images/skullpanda-icon.jpg" alt="category 1" class="h-50 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">SKULLPANDA</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group justify-items-center">
+                <img src="../images/hirono-icon.jpg" alt="category 1" class="h-50 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">HIRONO</a>
+            </div>
+            <div class="relative rounded-sm overflow-hidden group justify-items-center">
+                <img src="../images/kubo-icon.jpg" alt="category 1" class="h-50 lg:h-60">
+                <a href="product.html" class="absolute inset-0 bg-gray-900 bg-opacity-10 flex items-center justify-center text-xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-roboto font-medium group-hover:bg-opacity-60 transition">KUBO</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./categories -->
+
+    <!-- new arrival -->
+    <div class="justify-items-center w-full pb-16">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">top new arrival</h2>
+        <div class="grid grid-cols-2 px-3 lg:px-28 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p01-recom.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <p class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            SKULLPANDA Winter
+                        </p>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿690.00</p>
+                        <p class="text-sm text-gray-400 ">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p02-recom.png" alt="product 1" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <p class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            CRYBABY Crying Again Series
+                        </p>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿690.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p03-recom.png" alt="product 1" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <p class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            KUBO 24/7 YOU Series Figures
+                        </p>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p04-recom.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4 items-end">
+                    <a href="#">
+                        <p class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            SPACE MOLLY 100% Series 3
+                        </p>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./new arrival -->
+
+    <!-- ads -->
+    <div class="w-full pb-16 animate-bounce justify-items-center">
+        <div class="flex justify-center gap-6 space-x-1">
+            <img src="../images/ads01.jpg" alt="ads" class="w-60 h-30">
+            <img src="../images/ads03.jpg" alt="ads" class="w-20 h-30">
+            <img src="../images/ads02.jpg" alt="ads" class="w-60 h-30">
+        </div>
+    </div>
+    <!-- ./ads -->
+
+    <!-- product -->
+    <div class="w-full pb-16 justify-items-center">
+        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">recomended for you</h2>
+        <div class="grid grid-cols-2 px-3 lg:px-28 lg:grid-cols-4 gap-6">
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p01-home.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            Finding MOKOKO Figures
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p02-home.jpg" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-base mb-2 text-gray-800 hover:text-primary transition">B
+                            ROYAL MOLLY Huang Yuxing-Bubbles
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿7,890.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p03-home.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            Hirono×Le Petit Prince
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p04-home.jpg" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            SKULLPANDA Egon Schiele</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿7,890.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p05-home.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">G
+                            MOLLY Carb-Lover
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p07-home.jpg" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            SPACE MOLLY Rick and Morty
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿6,790.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p06-home.png" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            CRYBABY Crying Again   
+                        </h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿380.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+            <div class="bg-white shadow rounded overflow-hidden group">
+                <div class="relative">
+                    <img src="../images/p08-home.jpg" alt="product 1" class="h-30">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex cursor-pointer items-center 
+                    justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                    </div>
+                </div>
+                <div class="pt-4 pb-3 px-4">
+                    <a href="#">
+                        <h4 class="uppercase font-medium text-md mb-2 text-gray-800 hover:text-primary transition">
+                            CRYBABY The Queen of Broken Heart</h4>
+                    </a>
+                    <div class="flex items-baseline mb-1 space-x-2">
+                        <p class="text-sm lg:text-xl text-primary font-semibold">฿7,890.00</p>
+                        <p class="text-sm text-gray-400">/ Item</p>
+                    </div>
+                </div>
+                <a href="#"
+                    class="block w-full py-1 text-center text-white bg-primary border border-primary rounded-lg hover:bg-transparent hover:text-primary transition">Add
+                    to cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- ./product -->
+
     <!-- Footer -->
     <footer class="bg-white">
-      <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-          <div class="text-center">
-              <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
-                  <img src="../images/Logo.png" class="h-6 mr-3 sm:h-9" alt="My Logo">
-                  My Logo    
-              </a>
-              <span class="block text-sm text-center text-gray-500">© 2024-2025 Oaddy-Wind™. All Rights Reserved.
-              </span>
-              <ul class="flex justify-center mt-5 space-x-5">
-                  <li>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 ">
-                          <img src="../images/fb.png" class="h-4 mr-3 sm:h-7" alt="facebook">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 ">
-                          <img src="../images/Group.png" class="h-4 mr-3 sm:h-7" alt="group">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="text-gray-500 hover:text-gray-900 ">
-                          <img src="../images/insta.png" class="h-4 mr-3 sm:h-7" alt="instagram">
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#" class="text-gray-500 hover:text-gray-900">
-                          <img src="../images/Linkedin.png" class="h-4 mr-3 sm:h-7" alt="linkedin">
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </footer>
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="text-center">
+                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
+                    <img src="../images/LogoOW.png" class="h-14 mr-3 sm:h-16" alt="My Logo">
+                    My Logo    
+                </a>
+                <span class="block text-sm text-center text-gray-500">© 2024-2025 Oaddy-Wind™. All Rights Reserved.
+                </span>
+                <ul class="flex justify-center mt-5 space-x-5">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/fb.png" class="h-4 mr-3 sm:h-7" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/Group.png" class="h-4 mr-3 sm:h-7" alt="group">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/insta.png" class="h-4 mr-3 sm:h-7" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <img src="../images/Linkedin.png" class="h-4 mr-3 sm:h-7" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">&copy; Oaddy-Wind™ - All Right Reserved</p>
+            <div>
+                <img src="../images/LogoOW.png" alt="methods" class="h-5">
+            </div>
+        </div>
+    </div>
+    <!-- ./copyright -->
 </body>
+
 </html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OW MART</title>
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white w-full">
+        <div class="flex-wrap flex items-center justify-between">
+            <a href="index.html">
+                <img src="../images/LogoOW.png" alt="Logo" class="w-20">
+            </a>
+
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" name="search" id="search"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
+                    placeholder="search">
+                <button
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="mycarts.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <div
+                        class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
+                        2</div>
+                </a>
+                <a href="profile.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ./header -->
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="w-full flex pr-12">
+            <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="product.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+                </div>
+                <a href="login.html" class="text-gray-200 hover:text-white transition">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ./navbar -->
+    <!-- breadcrumb -->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="../index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Profile</p>
+    </div>
+    <!-- ./breadcrumb -->
+    <!-- wrapper -->
+    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+
+        <!-- sidebar -->
+        <div class="col-span-3">
+            <div class="px-4 py-3 shadow flex items-center gap-4">
+                <div class="flex-shrink-0">
+                    <img src="../images/avatar.png" alt="profile"
+                        class="rounded-full w-14 h-14 border border-gray-200 p-1 object-cover">
+                </div>
+                <div class="flex-grow">
+                    <p class="text-gray-600">Hello,</p>
+                    <h4 class="text-gray-800 font-medium">Mama Fivebath</h4>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
+                <div class="space-y-1 pl-8">
+                    <a href="#" class="block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-address-card"></i>
+                        </span>
+                        Manage account
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        Profile information
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        Manage addresses
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        Change password
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4">
+                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </span>
+                        My order history
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        My returns
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        My Cancellations
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        My reviews
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4">
+                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </span>
+                        Payment methods
+                    </a>
+                    <a href="#" class="relative hover:text-primary block capitalize transition">
+                        voucher
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4">
+                    <a href="#" class="relative text-primary block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        My carts
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4">
+                    <a href="#" class="relative hover:text-primary block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                        </span>
+                        Logout
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ./sidebar -->
+
+        <!-- wishlist -->
+        <div class="col-span-9 space-y-4">
+            <div class="flex items-center justify-between border gap-6 p-4 border-gray-200 rounded">
+                <div class="w-28">
+                    <img src="../images/p01-home.png" alt="product 6" class="w-full">
+                </div>
+                <div class="w-1/3">
+                    <h2 class="text-gray-800 text-base font-medium uppercase">Finding MOKOKO Figures</h2>
+                    <p class="text-gray-500 text-sm">Availability: <span class="text-green-600">In Stock</span></p>
+                </div>
+                <div class="text-primary text-lg font-semibold">฿380.00</div>
+                <a href="checkout.html"
+                    class="px-6 py-2 text-center text-sm text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
+                    check out</a>
+
+                <div class="text-gray-600 cursor-pointer hover:text-primary">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border gap-6 p-4 border-gray-200 rounded">
+                <div class="w-28">
+                    <img src="../images/pd01-detail1.jpg" alt="product 6" class="w-full">
+                </div>
+                <div class="w-1/3">
+                    <h2 class="text-gray-800 text-base font-medium uppercase">MEGA ROYAL MOLLY 400% Huang Yuxing-Bubbles</h2>
+                    <p class="text-gray-500 text-sm">Availability: <span class="text-green-600">In Stock</span></p>
+                </div>
+                <div class="text-primary text-lg font-semibold">฿7,890.00</div>
+                <a href="checkout.html"
+                    class="px-6 py-2 text-center text-sm text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
+                    check out</a>
+
+                <div class="text-gray-600 cursor-pointer hover:text-primary">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border gap-6 p-4 border-gray-200 rounded">
+                <div class="relative rounded-lg overflow-hidden group justify-items-center w-28">
+                    <img src="../images/p02-outstock.png" alt="product 6" class="w-full">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center cursor-not-allowed 
+                    justify-center gap-2 opacity-80 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] transition">Out of stock
+                    </div>
+                </div>
+                <div class="w-1/3">
+                    <h2 class="text-gray-800 text-xl font-medium uppercase">HE MONSTERS Plush Pendant Blind Box</h2>
+                    <p class="text-gray-500 text-sm">Availability: <span class="text-red-600">Out of Stock</span></p>
+                </div>
+                <div class="text-primary text-lg font-semibold">$380.00</div>
+                <a href="checkout.html"
+                    class="cursor-not-allowed px-6 py-2 text-center text-sm text-white bg-red-400 border border-red-400 rounded transition uppercase font-roboto font-medium">
+                    check out</a>
+
+                <div class="text-gray-600 cursor-pointer hover:text-primary">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ./wishlist -->
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <div class="text-center">
+                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
+                    <img src="../images/LogoOW.png" class="h-14 mr-3 sm:h-16" alt="My Logo">
+                    My Logo    
+                </a>
+                <span class="block text-sm text-center text-gray-500">© 2024-2025 Oaddy-Wind™. All Rights Reserved.
+                </span>
+                <ul class="flex justify-center mt-5 space-x-5">
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/fb.png" class="h-4 mr-3 sm:h-7" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/Group.png" class="h-4 mr-3 sm:h-7" alt="group">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900 ">
+                            <img src="../images/insta.png" class="h-4 mr-3 sm:h-7" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 hover:text-gray-900">
+                            <img src="../images/Linkedin.png" class="h-4 mr-3 sm:h-7" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">&copy; Oaddy-Wind™ - All Right Reserved</p>
+            <div>
+                <img src="../images/LogoOW.png" alt="methods" class="h-5">
+            </div>
+        </div>
+    </div>
+    <!-- ./copyright -->    
+</body>
+</html>
